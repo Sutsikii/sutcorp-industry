@@ -1,8 +1,19 @@
-function App() {
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import Portfolio from "./pages/Portfolio";
+import { BrowserRouter, Routes, Route} from "react-router-dom"
+
+function App() 
+{
   return (
-    <div className="App">
-      <h1> SutCorp Industry</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Error />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 
