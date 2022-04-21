@@ -1,7 +1,9 @@
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Portfolio from "./pages/Portfolio";
-import { BrowserRouter, Routes, Route} from "react-router-dom"
+import Galerie from "./pages/Galerie";
+import Contact from "./pages/Contact";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() 
 {
@@ -11,6 +13,8 @@ function App()
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Error />} />
         <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/Galerie" element={<Galerie />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
     
