@@ -14,7 +14,7 @@ function App()
         <Route path="*" element={<Error />} />
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Galerie" element={<Galerie />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path= "/Contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
     
